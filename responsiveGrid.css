@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+#header {
+    width: 100%;
+    padding: 15px;
+    background-color: blueviolet;
+    color: white;
+}
+
+#footer {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid red;
+}
+
+
+/*main content div will wrap col-1 and col-2*/
+
+#main-content {
+    width: 100%;
+    overflow: auto;
+}
+
+
+/*wrapped by main-content div*/
+
+.col-1 {
+    width: 25%;
+    float: left;
+    border: 2px solid red;
+}
+
+
+/*wrapped by main-content div*/
+
+.col-2 {
+    width: 75%;
+    float: left;
+    border: 2px solid red;
+}
+
+@media only screen and (max-width: 700px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}

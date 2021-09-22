@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="simplepicker-master/dist/simplepicker.css">
+    <script src="simplepicker-master/dist/simplepicker.js"></script>
+    <script src="meetingDemo.js"></script>
+</head>
+
+<body>
+    <h2>Free Meeting Creator.</h2>
+    <p>Our website focuses on creating a ms teams meeting from our website directly.
+    </p>
+
+    <h2>Vision</h2>
+    <p>Our Vision is to be the greatest firm in the education industry.</p>
+
+    <p>Please input your email address</p>
+    <input type="text" id="recipient-mail">
+
+    <p>provide the meeting time.</p>
+    <input type="text" id="input-date" onclick="launchDatePicker()">
+    <div style="display: none; " id="date-picker"></div>
+
+    <p id="input-head">please input all the emails (comma seperated) to connect with.</p>
+    <input type="text" id="emails">
+    <button>create meeting</button>
+</body>
+
+</html>
